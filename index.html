@@ -1,175 +1,267 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odontología Integral Dra. Karen MJ</title>
+export default function DentalClinicWebsite() {
+  return (
+    <div className="min-h-screen bg-[#fffafa] text-slate-800 overflow-hidden">
+      {/* HERO */}
+      <section className="relative bg-gradient-to-b from-pink-50 via-white to-white overflow-hidden">
+        <div className="absolute -top-40 -left-40 w-96 h-96 bg-pink-200/40 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-slate-300/20 rounded-full blur-3xl"></div>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-700 px-5 py-2 rounded-full font-semibold shadow-sm mb-6">
+              ✨ Promoción por apertura
+            </div>
 
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#fffafa;
-    }
-  </style>
-</head>
+            <h1 className="text-5xl md:text-7xl font-black leading-tight text-slate-800">
+              Odontología Integral
+              <span className="block text-pink-500 mt-2">Dra. Karen MJ Moreno Torres</span>
+            </h1>
 
-<body>
+            <p className="mt-8 text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl">
+              Atención dental profesional con un enfoque moderno,
+              estético y confiable para toda la familia en Los Héroes Ixtapaluca.
+            </p>
 
-<section class="bg-gradient-to-b from-pink-50 to-white min-h-screen flex items-center">
-  <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
+            <div className="mt-10 bg-white rounded-[35px] p-8 border border-pink-100 shadow-2xl max-w-lg">
+              <div className="text-pink-600 font-bold uppercase tracking-widest text-sm">
+                Oferta especial
+              </div>
 
-    <div>
-      <span class="bg-pink-100 text-pink-600 px-5 py-2 rounded-full font-bold">
-        ✨ PROMOCIÓN POR APERTURA
-      </span>
+              <div className="mt-3 flex items-end gap-3">
+                <div className="text-7xl font-black text-slate-800 leading-none">
+                  2x1
+                </div>
+              </div>
 
-      <h1 class="text-6xl font-black text-slate-800 mt-8 leading-tight">
-        Odontología Integral
-        <span class="block text-pink-500">
-          Dra. Karen MJ
-        </span>
-      </h1>
+              <div className="mt-3 text-2xl font-bold text-pink-500">
+                En limpiezas dentales
+              </div>
 
-      <p class="mt-6 text-xl text-slate-600 leading-relaxed">
-        Atención dental profesional y moderna en Los Héroes Ixtapaluca.
-      </p>
+              <div className="mt-5 inline-flex items-center gap-2 bg-pink-50 border border-pink-200 px-5 py-3 rounded-2xl text-xl font-bold text-slate-700">
+                🦷 Solo $250
+              </div>
+            </div>
 
-      <div class="bg-white mt-10 p-8 rounded-3xl shadow-2xl border border-pink-100">
-        <h2 class="text-7xl font-black text-slate-800">
-          2x1
-        </h2>
+            <div className="flex flex-wrap gap-4 mt-10">
+              <a
+                href="https://wa.me/525522616655"
+                target="_blank"
+                className="bg-pink-500 hover:bg-pink-600 transition-all duration-300 text-white px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105"
+              >
+                Agendar cita
+              </a>
 
-        <p class="text-3xl font-bold text-pink-500 mt-2">
-          En limpiezas dentales
-        </p>
+              <a
+                href="#servicios"
+                className="bg-white border border-slate-300 hover:border-pink-400 px-8 py-4 rounded-2xl font-semibold transition-all"
+              >
+                Ver servicios
+              </a>
+            </div>
+          </div>
 
-        <div class="mt-5 bg-pink-100 text-pink-600 inline-block px-6 py-3 rounded-2xl text-3xl font-black">
-          🦷 $250
+          <div className="flex justify-center">
+            <div className="bg-white rounded-[40px] shadow-2xl border border-pink-100 p-8 w-full max-w-xl">
+              <div className="bg-gradient-to-br from-pink-50 to-white rounded-[35px] p-8 shadow-inner">
+                <img
+                  src="/mnt/data/image.png"
+                  alt="Logo Dra Karen MJ"
+                  className="w-full object-contain rounded-3xl"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <a href="https://wa.me/525522616655"
-         class="inline-block mt-8 bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl">
-        Agendar cita
-      </a>
+      {/* INFO */}
+      <section className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-[30px] p-8 shadow-lg border border-pink-100 hover:shadow-2xl transition-all">
+            <div className="text-5xl mb-4">📍</div>
+            <h3 className="text-2xl font-bold mb-3">Ubicación</h3>
+            <p className="text-slate-600 leading-relaxed text-lg">
+              Calle Libertad, manzana 26, lote 16,
+              <br />
+              Los Héroes Ixtapaluca
+            </p>
+          </div>
+
+          <div className="bg-white rounded-[30px] p-8 shadow-lg border border-pink-100 hover:shadow-2xl transition-all">
+            <div className="text-5xl mb-4">🕒</div>
+            <h3 className="text-2xl font-bold mb-3">Horario</h3>
+            <p className="text-slate-600 leading-relaxed text-lg">
+              Lunes a sábado
+              <br />
+              9:00 AM - 7:00 PM
+            </p>
+          </div>
+
+          <div className="bg-white rounded-[30px] p-8 shadow-lg border border-pink-100 hover:shadow-2xl transition-all">
+            <div className="text-5xl mb-4">📞</div>
+            <h3 className="text-2xl font-bold mb-3">Contáctanos</h3>
+            <p className="text-4xl font-black text-pink-500 tracking-wide">
+              5522616655
+            </p>
+
+            <a
+              href="https://wa.me/525522616655"
+              target="_blank"
+              className="inline-block mt-5 text-pink-600 font-bold text-lg"
+            >
+              Enviar WhatsApp →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICIOS */}
+      <section id="servicios" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <div className="inline-block bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-semibold mb-5">
+              Servicios Dentales
+            </div>
+
+            <h2 className="text-5xl font-black text-slate-800">
+              Cuidamos tu sonrisa
+            </h2>
+
+            <p className="mt-5 text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
+              Tratamientos modernos enfocados en salud, estética y bienestar dental.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {[
+              ['🪥', 'Limpiezas Dentales'],
+              ['✨', 'Blanqueamiento Dental'],
+              ['🦷', 'Restauraciones Estéticas'],
+              ['😁', 'Ortodoncia'],
+              ['🔩', 'Implantología'],
+            ].map(([icon, title]) => (
+              <div
+                key={title}
+                className="bg-[#fff8f8] rounded-[30px] p-8 border border-pink-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-center"
+              >
+                <div className="text-6xl mb-5">{icon}</div>
+                <div className="font-bold text-lg text-slate-700 leading-snug">
+                  {title}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROMO */}
+      <section className="py-24 bg-gradient-to-r from-pink-500 to-rose-400 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 text-9xl">🦷</div>
+          <div className="absolute bottom-10 right-10 text-9xl">✨</div>
+        </div>
+
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+          <div className="text-2xl uppercase tracking-[0.3em] font-semibold mb-4">
+            ¡Por apertura!
+          </div>
+
+          <div className="text-8xl md:text-9xl font-black leading-none">
+            2x1
+          </div>
+
+          <div className="mt-5 text-3xl md:text-4xl font-bold">
+            En limpiezas dentales
+          </div>
+
+          <div className="mt-8 inline-flex items-center gap-3 bg-white text-pink-500 px-8 py-5 rounded-3xl text-4xl font-black shadow-2xl">
+            🦷 $250
+          </div>
+        </div>
+      </section>
+
+      {/* GALERIA */}
+      <section className="py-20 bg-[#fff8f8]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-slate-800">
+              Nuestro Consultorio
+            </h2>
+
+            <p className="mt-5 text-xl text-slate-500">
+              Próximamente fotografías reales del consultorio.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="aspect-[4/3] rounded-[35px] border-2 border-dashed border-pink-200 bg-white flex items-center justify-center text-slate-400 text-xl shadow-md"
+              >
+                Foto del consultorio
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACTO */}
+      <section className="py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-[45px] p-12 text-white shadow-2xl text-center relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
+
+            <div className="relative z-10">
+              <h2 className="text-5xl font-black leading-tight">
+                Agenda tu cita hoy mismo
+              </h2>
+
+              <p className="mt-6 text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Atención profesional, cómoda y enfocada en brindarte la mejor experiencia dental.
+              </p>
+
+              <a
+                href="https://wa.me/525522616655"
+                target="_blank"
+                className="inline-block mt-10 bg-pink-500 hover:bg-pink-600 transition-all px-10 py-5 rounded-2xl text-2xl font-black shadow-2xl hover:scale-105"
+              >
+                WhatsApp: 5522616655
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-slate-950 text-white py-10 text-center">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-3xl font-black text-pink-300">
+            Odontología Integral Dra. Karen MJ Moreno Torres
+          </h3>
+
+          <p className="mt-4 text-slate-400 text-lg">
+            Los Héroes Ixtapaluca · Estado de México
+          </p>
+
+          <div className="mt-6 flex justify-center gap-4 flex-wrap">
+            <a
+              href="https://wa.me/525522616655"
+              className="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-2xl font-bold transition-all"
+            >
+              WhatsApp
+            </a>
+
+            <button className="bg-white/10 px-6 py-3 rounded-2xl font-semibold">
+              Facebook próximamente
+            </button>
+          </div>
+
+          <p className="mt-8 text-slate-600 text-sm">
+            © 2026 Odontología Integral Dra. Karen MJ Moreno Torres
+          </p>
+        </div>
+      </footer>
     </div>
-
-    <div class="bg-white rounded-[40px] shadow-2xl p-8">
-      <img src="https://i.imgur.com/2g6v7xM.png"
-           class="rounded-3xl w-full">
-    </div>
-
-  </div>
-</section>
-
-<section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <div class="text-center">
-      <h2 class="text-5xl font-black text-slate-800">
-        Nuestros Servicios
-      </h2>
-
-      <p class="text-slate-500 mt-4 text-xl">
-        Tratamientos modernos y profesionales.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-5 gap-6 mt-16">
-
-      <div class="bg-pink-50 rounded-3xl p-6 text-center">
-        <div class="text-5xl">🪥</div>
-        <h3 class="mt-4 font-bold">Limpiezas Dentales</h3>
-      </div>
-
-      <div class="bg-pink-50 rounded-3xl p-6 text-center">
-        <div class="text-5xl">✨</div>
-        <h3 class="mt-4 font-bold">Blanqueamiento</h3>
-      </div>
-
-      <div class="bg-pink-50 rounded-3xl p-6 text-center">
-        <div class="text-5xl">🦷</div>
-        <h3 class="mt-4 font-bold">Restauraciones</h3>
-      </div>
-
-      <div class="bg-pink-50 rounded-3xl p-6 text-center">
-        <div class="text-5xl">😁</div>
-        <h3 class="mt-4 font-bold">Ortodoncia</h3>
-      </div>
-
-      <div class="bg-pink-50 rounded-3xl p-6 text-center">
-        <div class="text-5xl">🔩</div>
-        <h3 class="mt-4 font-bold">Implantología</h3>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="py-20 bg-pink-500 text-white text-center">
-  <div class="max-w-5xl mx-auto px-6">
-
-    <h2 class="text-7xl font-black">
-      2x1
-    </h2>
-
-    <p class="text-4xl font-bold mt-4">
-      En limpiezas dentales
-    </p>
-
-    <div class="bg-white text-pink-500 inline-block px-8 py-4 rounded-3xl text-5xl font-black mt-8">
-      🦷 $250
-    </div>
-
-  </div>
-</section>
-
-<section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-
-    <div class="bg-pink-50 rounded-3xl p-8">
-      <div class="text-5xl">📍</div>
-      <h3 class="font-black text-2xl mt-4">Ubicación</h3>
-
-      <p class="mt-4 text-slate-600">
-        Calle Libertad, manzana 26, lote 16,
-        Los Héroes Ixtapaluca
-      </p>
-    </div>
-
-    <div class="bg-pink-50 rounded-3xl p-8">
-      <div class="text-5xl">🕒</div>
-      <h3 class="font-black text-2xl mt-4">Horario</h3>
-
-      <p class="mt-4 text-slate-600">
-        Lunes a sábado<br>
-        9:00 AM - 7:00 PM
-      </p>
-    </div>
-
-    <div class="bg-pink-50 rounded-3xl p-8">
-      <div class="text-5xl">📞</div>
-      <h3 class="font-black text-2xl mt-4">Contacto</h3>
-
-      <p class="mt-4 text-4xl font-black text-pink-500">
-        5522616655
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer class="bg-slate-900 text-white text-center py-10">
-  <h3 class="text-3xl font-black text-pink-300">
-    Odontología Integral Dra. Karen MJ
-  </h3>
-
-  <p class="mt-4 text-slate-400">
-    Los Héroes Ixtapaluca · Estado de México
-  </p>
-</footer>
-
-</body>
-</html>
+  )
+}
